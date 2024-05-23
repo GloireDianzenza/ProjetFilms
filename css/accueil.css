@@ -1,0 +1,29 @@
+section{
+    margin-top: 110px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.title img{
+    width: 300px;
+}
+
+h1{
+    text-align: left;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.title p{
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.title{
+    display: flex;
+}
