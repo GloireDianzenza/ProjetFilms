@@ -35,7 +35,37 @@
         </div>
     </header>
     <section>
-
+        <h1>Achat de : Die Hard</h1>
+        <section class="part1">
+            <div class="left">
+                <img src="../img/DieHard.jpg" alt="">
+            </div>
+            <div class="right">
+                <h2>1988</h2>
+                <p>NYPD cop John McClane becomes a one-man army when a Christmas party at his estranged wife's workplace is overtaken by terrorists.</p>
+            </div>
+        </section>
+        <section class="part2">
+            <form action="paiement.html">
+                <input type="hidden" name="name" value="toto">
+                <div class="input-field">
+                    <label for="">Quantité</label>
+                    <div class="range">
+                        <button class="range-minus">-</button>
+                        <input type="text" readonly value="1" id="numProducts">
+                        <button class="range-plus">+</button>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <label for="">Prix total</label>
+                    <p id="prix">10,00 €</p>
+                </div>
+                <div class="input-field">
+                    <label for="">Numéro de confirmation</label>
+                    <p id="numConf">E506</p>
+                </div>
+            </form>
+        </section>
     </section>
     <footer>
         <div class="links">
