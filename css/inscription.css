@@ -1,0 +1,9 @@
+section{
+    margin-top: 110px;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+}

@@ -12,4 +12,33 @@ html{
 body{
     width: 100%;
     min-height: 100vh;
+    background-color: var(--bg-color);
+    color: black;
+}
+
+:root{
+    --bg-color:#D5BA98;
+    --main-color1:red;
+    --text-color:black;
+    --default-color:white;
+    --confirm-color:#0B980B;
+    --footer-color1:#d3d3d3;
+    --footer-color2:#c3c3c3;
+}
+
+button{
+    cursor: pointer;
+    background-color: var(--main-color1);
+    color: black;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 60px;
+    padding: 10px;
+    border: none;outline: none;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    border: 4px solid black;
+    box-shadow: 0 0 10px black;
 }

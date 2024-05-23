@@ -1,3 +1,23 @@
 footer{
     width: 100vw;
 }
+
+footer .links,footer .countries{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+}
+
+footer .links{
+    background-color: var(--footer-color1);
+}
+footer a{
+    text-decoration: none;
+    color: black;   
+}
+footer .countries{
+    background-color: var(--footer-color2);
+    justify-content: space-evenly;
+}
