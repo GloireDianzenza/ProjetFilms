@@ -52,7 +52,7 @@ export function clampOperation(value,min,max,operation){
 export function isInteger(text){
     try{
         var num = parseInt(text);
-        if(isNaN(num) || !num)
+        if((isNaN(num) || !num) && text !== "0")
         {
             var e = new Error("String cannot be converted to int");
             throw e;
