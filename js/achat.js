@@ -34,6 +34,7 @@ function changerPrix(){
         }
         else{
             var num = parseInt(numProducts.value);
-            console.log(num);
+            var prix = 10.00;
+            $('#prix').html((10*num).toString()+",00 €");
         } 
 }
