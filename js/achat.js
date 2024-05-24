@@ -38,3 +38,8 @@ function changerPrix(){
             $('#prix').html((10*num).toString()+",00 €");
         } 
 }
+
+console.log($('#panierBtn'));
+$('#panierBtn').click(function(){
+    
+})
