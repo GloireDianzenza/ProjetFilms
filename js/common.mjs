@@ -1,3 +1,3 @@
-import * as functions from "./functions.mjs";
+import { clamp,clampOperation,isInteger,resetInputNum } from "./functions.mjs";
 
-export * from "./common.mjs";
+export {clamp,clampOperation,isInteger,resetInputNum};
