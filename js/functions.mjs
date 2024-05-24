@@ -43,3 +43,20 @@ export function clampOperation(value,min,max,operation){
         return value;
     }
 }
+
+export function isInteger(text){
+    try{
+        var num = parseInt(text);
+        if(isNaN(num) || !num)
+        {
+            var e = new Error("String cannot be converted to int");
+            throw e;
+        }
+        else{
+            return true;
+        }
+    }catch(exc){
+        console.error(exc);
+        return false;
+    }
+}
