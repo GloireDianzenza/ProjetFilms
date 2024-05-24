@@ -24,19 +24,19 @@ export function clampOperation(value,min,max,operation){
         value++;
         return clamp(value,min,max);
     }
-    if(operation === "+")
+    if(operation === "-")
     {
-        value++;
+        value--;
         return clamp(value,min,max);
     }
-    if(operation === "+")
+    if(operation === "*" || operation.toUpperCase() == "X")
     {
-        value++;
+        value *= 2;
         return clamp(value,min,max);
     }
-    if(operation === "+")
+    if(operation === "/")
     {
-        value++;
+        value /= 2;
         return clamp(value,min,max);
     }
     else{
