@@ -7,3 +7,40 @@ body > section{
     justify-content: flex-start;
     gap: 50px;
 }
+
+label{
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 50px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+.input-field{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-left: 40px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+input{
+    font-weight: normal;
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+input:read-only,input::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+}

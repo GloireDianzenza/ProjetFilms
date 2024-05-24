@@ -35,7 +35,42 @@
         </div>
     </header>
     <section>
-        
+        <h1>Paiement</h1>
+        <form action="merci.html">
+            <input type="hidden" name="name" value="toto">
+            <div class="input-field">
+                <label for="">Prix</label>
+                <input type="text" id="" readonly value="30,00 €">
+            </div>
+            <div class="input-field">
+                <label for="">Livraison</label>
+                <div class="radios">
+                    <input type="radio" name="liv" id="phy"><label for="phy">Physique</label>
+                    <input type="radio" name="liv" id="stream" checked><label for="stream">Streaming</label>
+                </div>
+            </div>
+            <div class="input-field">
+                <label for="name">Nom</label>
+                <input type="text" id="name" value="toto">
+            </div>
+            <div class="input-field">
+                <label for="mail">Adresse email</label>
+                <input type="text" id="mail" value="toto@gmail.com" readonly>
+            </div>
+            <div class="input-field">
+                <label for="cardNum">Numéro de carte</label>
+                <input type="text" id="cardNum" placeholder="1234 1234 1234 5678" maxlength="19">
+            </div>
+            <div class="input-field">
+                <label for="expDate">Date d'expiration</label>
+                <input type="text" id="expDate" placeholder="01/24" maxlength="5">
+            </div>
+            <div class="input-field">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" placeholder="123" maxlength="3">
+            </div>
+            <button type="submit">Payer</button>
+        </form>
     </section>
     <footer>
         <div class="links">
