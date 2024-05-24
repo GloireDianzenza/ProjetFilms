@@ -39,7 +39,11 @@ function changerPrix(){
         } 
 }
 
-console.log($('#panierBtn'));
 $('#panierBtn').click(function(){
-    
+    if($('#panierBtn').html() === "Ajouter au panier"){
+        $('#panierBtn').html("Retirer du panier");
+    }
+    else{
+        $('#panierBtn').html("Ajouter au panier");
+    }
 })
