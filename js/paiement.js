@@ -41,4 +41,26 @@ setInterval(()=>{
             return;
         }
     }
+    if(expDate.value.length >= 3)
+    {
+            for(var letter of cardNum.value){
+                console.log(letter);
+            }
+    }
+    if(expDate.value.length >= 4)
+        {
+            if(!isInteger(expDate.value[3]))
+            {
+                expDate.value = "";
+                return;
+            }
+        }
+        if(expDate.value.length >= 5)
+            {
+                if(!isInteger(expDate.value[4]))
+                {
+                    expDate.value = "";
+                    return;
+                }
+            }
 },100);
