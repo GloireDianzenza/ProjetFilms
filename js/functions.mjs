@@ -44,6 +44,11 @@ export function clampOperation(value,min,max,operation){
     }
 }
 
+/**
+ * Checks if a string can be converted to an integer
+ * @param {string} text The text to analyze
+ * @returns {boolean} The result
+ */
 export function isInteger(text){
     try{
         var num = parseInt(text);
@@ -58,5 +63,16 @@ export function isInteger(text){
     }catch(exc){
         console.error(exc);
         return false;
+    }
+}
+
+/**
+ * Resets an input to its default value if the value ain't an integer
+ * @param {HTMLInputElement} input The concerned input
+ * @param {number} defaultValue The default value
+ */
+export function resetInputNum(input,defaultValue){
+    if(!isInteger(input.value)){
+        input.value = defaultValue.toString();
     }
 }
