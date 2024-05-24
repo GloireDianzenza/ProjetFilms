@@ -61,7 +61,6 @@ export function isInteger(text){
             return true;
         }
     }catch(exc){
-        console.error(exc);
         return false;
     }
 }
