@@ -42,11 +42,13 @@ setInterval(()=>{
         }
     }
     if(expDate.value.length >= 3)
-    {
-            for(var letter of cardNum.value){
-                console.log(letter);
+        {
+            if(expDate.value[2] !== "/")
+            {
+                expDate.value = "";
+                return;
             }
-    }
+        }
     if(expDate.value.length >= 4)
         {
             if(!isInteger(expDate.value[3]))
