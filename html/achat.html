@@ -51,9 +51,9 @@
                 <div class="input-field">
                     <label for="">Quantité</label>
                     <div class="range">
-                        <button class="range-minus">-</button>
+                        <button type="button" class="range-minus">-</button>
                         <input type="text" readonly value="1" id="numProducts">
-                        <button class="range-plus">+</button>
+                        <button type="button" class="range-plus">+</button>
                     </div>
                 </div>
                 <div class="input-field">
@@ -63,6 +63,10 @@
                 <div class="input-field">
                     <label for="">Numéro de confirmation</label>
                     <p id="numConf">E506</p>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Acheter</button>
+                    <button type="button">Ajouter au panier</button>
                 </div>
             </form>
         </section>
@@ -82,5 +86,8 @@
             <p>Spain</p>
         </div>
     </footer>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/achat.js" defer></script>
 </body>
 </html>

@@ -59,3 +59,21 @@ label,#prix{
     font-size: 35px;
     color: var(--footer-color1);
 }
+
+.range input{
+    height: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    max-width: 170px;
+}
+
+.range{
+    display: flex;
+    align-items: center;
+}
+
+.range button{
+    height: 90px;
+    width: 90px;
+}
