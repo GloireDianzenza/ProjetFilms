@@ -6,6 +6,7 @@ body > section{
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
+    margin-bottom: 60px !important;
 }
 
 label{
@@ -39,8 +40,27 @@ input{
     font-weight: normal;
     font-size: 40px;
     padding-left: 15px;
+    border-radius: 10px;
+    border: none;outline: none;
+    max-width: 1000px;
 }
 
 input:read-only,input::placeholder{
     color: rgba(0, 0, 0, 0.4);
+}
+
+input[type=radio]{
+    color: black;
+    accent-color: black;
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+input[type=radio] ~ label{
+    margin-left: 20px;
+}
+
+.small{
+    width: 170px !important;
 }
