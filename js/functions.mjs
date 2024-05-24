@@ -24,6 +24,21 @@ export function clampOperation(value,min,max,operation){
         value++;
         return clamp(value,min,max);
     }
+    if(operation === "+")
+    {
+        value++;
+        return clamp(value,min,max);
+    }
+    if(operation === "+")
+    {
+        value++;
+        return clamp(value,min,max);
+    }
+    if(operation === "+")
+    {
+        value++;
+        return clamp(value,min,max);
+    }
     else{
         return value;
     }
