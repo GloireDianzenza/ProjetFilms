@@ -10,6 +10,17 @@ $('.range-minus').click(function(){
         resetInputNum(numProducts,1);
     }
     else{
-
+        var num = parseInt(numProducts.value);
+        numProducts.value = clampOperation(num,1,10,"-").toString();
+    }
+});
+$('.range-plus').click(function(){
+    if(!isInteger(numProducts.value))
+    {
+        resetInputNum(numProducts,1);
+    }
+    else{
+        var num = parseInt(numProducts.value);
+        numProducts.value = clampOperation(num,1,10,"+").toString();
     }
 });
