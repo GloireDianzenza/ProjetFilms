@@ -6,4 +6,5 @@ $('#sortBtn li').click(function(){
     var value = $(this).attr('value');
     var text = $(this).html();
     $('#sortBtn').attr("value",value);
+    $('#sortBtn p').html(text);
 })
