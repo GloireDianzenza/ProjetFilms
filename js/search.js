@@ -26,7 +26,8 @@ const movieList = [
         plot:"The supposedly unsinkable RMS Titanic, carrying dreams and heartbreak like Jack and Rose, met a tragic end after striking an iceberg on its maiden voyage.",
         price:15,
         note:5,
-        favorite:true
+        favorite:true,
+        genre:["Drama","History","Romance"]
     },
     {
         image:"../img/DieHard.jpg",
@@ -36,7 +37,8 @@ const movieList = [
         plot:"NYPD cop John McClane becomes a one-man army when a Christmas party at his estranged wife's workplace is overtaken by terrorists.",
         price:10,
         note:4,
-        favorite:true
+        favorite:true,
+        genre:["Action"]
     },
     {
         image:"../img/heat.jpg",
@@ -46,7 +48,8 @@ const movieList = [
         plot:"In relentless pursuit of a perfect heist, a professional thief and a dedicated detective collide in a scorching game of cat and mouse.",
         price:10,
         note:5,
-        favorite:false
+        favorite:false,
+        genre:["Action","Thriller"]
     },
     {
         image:"../img/Jumanji.jpg",
@@ -56,7 +59,8 @@ const movieList = [
         plot:"Four teens trapped in a magical video game as their adult avatars must work together to beat the game and return to the real world.",
         price:10,
         note:5,
-        favorite:false
+        favorite:false,
+        genre:["Adventure","Action","Comedy"]
     },
     {
         image:"../img/leon.jpg",
@@ -66,7 +70,8 @@ const movieList = [
         plot:"A lonely hitman forms an unlikely bond with a young girl seeking revenge for her family's murder.",
         price:10,
         note:4,
-        favorite:false
+        favorite:false,
+        genre:["Action","Thriller"]
     },
     {
         image:"../img/TrainingDay.jpg",
@@ -76,7 +81,8 @@ const movieList = [
         plot:"An idealistic rookie cop's first day in narcotics takes a dark turn as his decorated but corrupt partner blurs the lines between justice and brutality.",
         price:10,
         note:4,
-        favorite:false
+        favorite:false,
+        genre:["Thriller"]
     },
 ]
 
