@@ -21,6 +21,7 @@ $("#filterBtn li").click(function(){
     var text = $(this).html();
     $('#filterBtn').attr("value",value);
     $('#filterBtn > p').html(text);
+    search($('#sortBtn').attr("value"),value,$('.inputs input').val());
 })
 
 
@@ -104,7 +105,68 @@ function search(sort="recents",filter="nom",input=""){
         }
     }
     else{
-
+        if(filter === "nom")
+        {
+            for(var movie of movieList)
+            {
+                if(movie.title.toLowerCase().includes(input.toLowerCase().trim()))
+                {
+                    acceptedMovies.push(movie);
+                }
+            }
+        }
+        else if(filter === "annee")
+        {
+            if(!isNaN(parseInt(input)))
+            {
+                var num = parseInt(input.trim());
+                for(var movie of movieList)
+                {
+                    if(movie.year == num || movie.year.toString().includes(num.toString()))
+                    {
+                        acceptedMovies.push(movie);
+                    }
+                }
+            }
+        }
+        else if(filter === "note")
+        {
+            if(!isNaN(parseInt(input)))
+            {
+                var num = parseInt(input.trim());
+                for(var movie of movieList)
+                {
+                    if(movie.note === num)
+                    {
+                        acceptedMovies.push(movie);
+                    }
+                }
+            }
+        }
+        else if(filter === "genre")
+        {
+            for(var movie of movieList)
+            {
+                for(var genre of movie.genre)
+                {
+                    if(genre.toLowerCase().includes(input.toLowerCase().trim()) && !acceptedMovies.includes(movie))
+                    {
+                        acceptedMovies.push(movie);
+                        break;
+                    }
+                }
+            }
+        }
+        else if(filter === "director")
+        {
+                for(var movie of movieList)
+                {
+                    if(movie.director.toLowerCase().includes(input.toLowerCase().trim()))
+                    {
+                        acceptedMovies.push(movie);
+                    }
+                }
+        }
     }
 
     if(sort === "recents")
@@ -167,4 +229,8 @@ function search(sort="recents",filter="nom",input=""){
 }
 search();
 
-console.log($("input"));
+$("input").on("keyup",function(event){
+    var keyboardEvent = event.originalEvent;
+    keyboardEvent.preventDefault();
+    search($('#sortBtn').attr("value"),$('#filterBtn').attr("value"),$('.inputs input').val());
+});
