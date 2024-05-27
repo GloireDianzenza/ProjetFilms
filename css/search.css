@@ -15,6 +15,7 @@ h1{
 }
 
 #sortBtn{
+    position: relative;
     background-color: red;
     border-radius: 10px;
     border: none;outline: none;
@@ -25,8 +26,40 @@ h1{
     align-items: center;
     margin-left: 20px;
     cursor: pointer;
+    color: white;
 }
 
 #sortBtn img{
     width: 25px;
+    transition: all 0.2s ease-in-out;
+}
+
+#sortBtn:hover img{
+    transform: rotate(-90deg);
+}
+
+.sort-list{
+    position: absolute;
+    top: 0;
+    list-style: none;
+    width: 150px;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.sort-list li{
+    margin: 10px;
+    color: black;
+}
+.sort-list li:hover{
+    text-decoration: underline;
+}
+
+#sortBtn .sort-list{
+    opacity: 0;
+    left: 0;
+}
+#sortBtn:hover .sort-list{
+    opacity: 1;
+    left: calc(100% + 3px);;
 }
