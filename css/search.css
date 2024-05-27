@@ -6,9 +6,10 @@ body > section{
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
+    margin-bottom: 60px !important;
 }
 
-h1{
+h1,h3{
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -117,4 +118,37 @@ header{
 
 #filterBtn,#sortBtn{
     user-select: none;
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    max-width: 500px;
+    padding: 0 15px;
+}
+
+.movie p{
+    align-self: flex-start;
+    font-size: 35px;
+    font-weight: normal;
+    width: 100%;
+}
+
+.stars img{
+    width: 60px;
+}
+
+.favorite{
+    width: 100px;
+    align-self: flex-start;
 }
