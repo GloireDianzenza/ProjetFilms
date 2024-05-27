@@ -68,5 +68,17 @@ setInterval(()=>{
 },100);
 
 setInterval(()=>{
-    
+    try {
+        for(var char of cvc.value)
+        {
+            if(!parseInt(char))
+            {
+                throw new Error("Cannot be converted in integer");
+            }
+        }
+    } catch (error) {
+        console.error(error);
+        cvc.value = "";
+        return;
+    }
 },100);
