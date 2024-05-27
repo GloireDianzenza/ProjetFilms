@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panier</title>
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/panier.css">
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
@@ -36,8 +36,55 @@
     </header>
     <section>
         <h1>Panier</h1>
-        <h2>Prix total actuel : 25 €</h2>
-        <div class="movies"></div>
+        <h2>Prix total actuel : <span id="total">25</span> €</h2>
+        <div class="movies">
+            <div class="movie">
+                <img src="../img/Titanic (James Cameron, 1997)_0000.jpg" alt="">
+                <h3>Titanic</h3>
+                <p>1997</p>
+                <p>James Cameron</p>
+                <p>The supposedly unsinkable RMS Titanic, carrying dreams and heartbreak like Jack and Rose, met a tragic end after striking an iceberg on its maiden voyage.</p>
+                <p>15,00 €</p>
+                <div class="stars">
+                    <img src="../svg/yellow-star-15589.svg" alt="">
+                    <img src="../svg/yellow-star-15589.svg" alt="">
+                    <img src="../svg/yellow-star-15589.svg" alt="">
+                    <img src="../svg/yellow-star-15589.svg" alt="">
+                    <img src="../svg/yellow-star-15589.svg" alt="">
+                </div>
+                <img src="../svg/red-heart-icon.svg" alt="" class="favorite">
+                <a href="achat.html?namr=toto"><button>Acheter</button></a>
+                <div class="quantity">
+                    <button id="minus">-</button>
+                    <input type="text" readonly value="1" class="numQuantity">
+                    <button id="plus">+</button>
+                </div>
+                <button>Retirer du panier</button>
+            </div>
+            <div class="movie">
+                <img src="../img/Jumanji.jpg" alt="">
+                <h3>Jumanji : Welcome to the Jungle</h3>
+                <p>2017</p>
+                <p>Jake Kasdan</p>
+                <p>Four teens trapped in a magical video game as their adult avatars must work together to beat the game and return to the real world.</p>
+                <p>10,00 €</p>
+                <div class="stars">
+                    <img src="../svg/yellow-star-15589.svg" alt="">
+                    <img src="../svg/yellow-star-15589.svg" alt="">
+                    <img src="../svg/yellow-star-15589.svg" alt="">
+                    <img src="../svg/yellow-star-15589.svg" alt="">
+                    <img src="../svg/yellow-star-15589.svg" alt="">
+                </div>
+                <img src="../svg/red-heart-icon.svg" alt="" class="favorite">
+                <a href="achat.html?namr=toto"><button>Acheter</button></a>
+                <div class="quantity">
+                    <button id="minus">-</button>
+                    <input type="text" readonly value="1" class="numQuantity">
+                    <button id="plus">+</button>
+                </div>
+                <button>Retirer du panier</button>
+            </div>
+        </div>
         <div class="buttons">
             <button>Tout acheter</button>
             <button>Tout retirer</button>
@@ -58,5 +105,8 @@
             <p>Spain</p>
         </div>
     </footer>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/common.mjs" type="module"></script>
+    <script src="../js/panier.js" type="module" defer></script>
 </body>
 </html>

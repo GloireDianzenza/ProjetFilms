@@ -1,12 +1,18 @@
 body > section{
     margin-top: 110px;
-    width: 100%;
+    width: 100% !important;
+    overflow: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
     margin-bottom: 60px !important;
+}
+
+body{
+    width: 100vw !important;
+    overflow-x: hidden !important;
 }
 
 h1,h2{
@@ -29,4 +35,77 @@ h2{
 
 .buttons button{
     color: white;
+}
+
+.movies{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 10px;
+}
+
+.movie{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.movie > img:first-child{
+    width: 400px;
+}
+
+h3{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.movie p{
+    text-align: left;
+    align-self: flex-start;
+    width: 100%;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.movie .stars{
+    display: flex;
+    justify-content: center;
+}
+
+.stars img{
+    width: 60px;
+}
+
+.movie .favorite{
+    width: 100px;
+    align-self: flex-start;
+}
+
+#plus,#minus{
+    width: 100px;
+    height: 100px;
+}
+
+.quantity{
+    height: 100px !important;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.quantity input{
+    height: 100% !important;
+    font-size: 80px;
+    font-weight: bold;
+    max-width: 150px;
+    text-align: center;
+    user-select: none;
+    pointer-events: none;
 }
