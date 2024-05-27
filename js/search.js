@@ -27,7 +27,57 @@ const movieList = [
         price:15,
         note:5,
         favorite:true
-    }
+    },
+    {
+        image:"../img/DieHard.jpg",
+        title:"Die Hard",
+        year:1988,
+        director:"John McTiernan",
+        plot:"NYPD cop John McClane becomes a one-man army when a Christmas party at his estranged wife's workplace is overtaken by terrorists.",
+        price:10,
+        note:4,
+        favorite:true
+    },
+    {
+        image:"../img/heat.jpg",
+        title:"Heat",
+        year:1995,
+        director:"Michael Mann",
+        plot:"In relentless pursuit of a perfect heist, a professional thief and a dedicated detective collide in a scorching game of cat and mouse.",
+        price:10,
+        note:5,
+        favorite:false
+    },
+    {
+        image:"../img/Jumanji.jpg",
+        title:"Jumanji : Welcome to the Jungle",
+        year:2017,
+        director:"Jake Kasdan",
+        plot:"Four teens trapped in a magical video game as their adult avatars must work together to beat the game and return to the real world.",
+        price:10,
+        note:5,
+        favorite:false
+    },
+    {
+        image:"../img/leon.jpg",
+        title:"Léon : The Professional",
+        year:1994,
+        director:"Luc Besson",
+        plot:"A lonely hitman forms an unlikely bond with a young girl seeking revenge for her family's murder.",
+        price:10,
+        note:4,
+        favorite:false
+    },
+    {
+        image:"../img/TrainingDay.jpg",
+        title:"Training Day",
+        year:2001,
+        director:"Antoine Fuqua",
+        plot:"An idealistic rookie cop's first day in narcotics takes a dark turn as his decorated but corrupt partner blurs the lines between justice and brutality.",
+        price:10,
+        note:4,
+        favorite:false
+    },
 ]
 
 function search(sort="recents",filter="nom",input=""){
