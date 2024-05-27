@@ -7,3 +7,9 @@ body > section{
     justify-content: flex-start;
     gap: 50px;
 }
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
