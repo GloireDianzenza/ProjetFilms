@@ -61,5 +61,9 @@ h1{
 }
 #sortBtn:hover .sort-list{
     opacity: 1;
-    left: calc(100% + 3px);;
+    left: calc(100% + 3px);
+}
+
+header{
+    z-index: 1000;
 }
