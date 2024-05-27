@@ -67,3 +67,49 @@ h1{
 header{
     z-index: 1000;
 }
+
+.inputs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputs input{
+    max-height: 70px;
+    width: 100% !important;
+    font-size: 34px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;outline: none;
+    padding: 10px;
+}
+
+.inputs > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filterBtn{
+    position: relative;
+}
+
+#filterBtn ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    background-color: white;
+    display: none;
+}
+
+#filterBtn.active ul{
+    display: block;
+}
+
+#filterBtn ul li{
+    font-size: 20px;
+}
+#filterBtn ul li:hover{
+    text-decoration: underline;
+}
