@@ -22,3 +22,36 @@ h1{
     justify-content: space-around;
     align-items: center;
 }
+
+@media screen and (max-width:1024px) {
+    .buttons{
+        flex-direction: column;
+        min-height: 200px;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 50px;
+        width: 100% !important;
+    }
+
+    .buttons a{
+        width: 80% !important;
+    }
+
+    .buttons button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    h1{
+        font-size: 60px;
+    }
+
+    .buttons{
+        padding: 0;
+    }
+
+    button,a{
+        font-size: 20px;
+    }
+}

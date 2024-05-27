@@ -77,3 +77,21 @@ label,#prix{
     height: 90px;
     width: 90px;
 }
+
+@media screen and (max-width:1024px) {
+    .part1{
+        justify-content: space-between !important;
+        padding: 0;
+        width: 100% !important;
+        gap: 10px;
+    }
+
+    .part1 p{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .part1 img{
+        margin-left: 15px;
+    }
+}

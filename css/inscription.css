@@ -6,6 +6,11 @@ section{
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
+    margin-bottom: 60px !important;
+}
+
+body{
+    width: 100% !important;
 }
 
 h1{
@@ -45,4 +50,63 @@ form input{
     min-width: 800px;
     border-radius: 10px;
     border: none;outline: none;
+}
+
+@media screen and (max-width:1024px) {
+    .input-field{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .input-field label{
+        align-self: flex-start;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    .input-field input{
+        min-width: 60% !important;
+        margin: 0 !important;
+    }
+
+    body{
+        width: 100vw !important;
+    }
+
+    section > *:not(h1){
+        padding: 0 40px;
+    }
+
+    footer{
+        width: 100% !important;
+    }
+
+    form{
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    section{
+        justify-content: center !important;
+    }
+
+    h1{
+        justify-self: flex-start;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+    h1,label{
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    input{
+        width: 100px !important;
+    }
 }

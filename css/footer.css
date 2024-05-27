@@ -21,3 +21,10 @@ footer .countries{
     background-color: var(--footer-color2);
     justify-content: space-evenly;
 }
+
+@media screen and (max-width:430px) {
+    footer .links{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
