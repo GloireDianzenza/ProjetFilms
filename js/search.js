@@ -111,9 +111,12 @@ function search(sort="recents",filter="nom",input=""){
     {
         acceptedMovies.sort((a,b)=>b.year - a.year);
     }
-    else if(sort === "recents")
+    else if(sort === "cheap")
     {
-        acceptedMovies.sort((a,b)=>b.year - a.year);
+        acceptedMovies.sort((a,b)=>a.price - b.price);
+    }
+    else{
+        acceptedMovies.sort((a,b)=>b.note - a.note);
     }
 
 
@@ -163,3 +166,5 @@ function search(sort="recents",filter="nom",input=""){
         }
 }
 search();
+
+console.log($("input"));

@@ -132,7 +132,8 @@ header{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px;
+    gap: 70px;
+    margin: 30px;
     max-width: 500px;
     padding: 0 15px;
 }
