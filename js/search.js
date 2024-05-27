@@ -5,8 +5,15 @@ $('#filterBtn').click(function(){
 $('#sortBtn li').click(function(){
     var value = $(this).attr('value');
     var text = $(this).html();
+
+    if($('#sortBtn').attr("value") === value)
+    {
+        return;
+    }
+
     $('#sortBtn').attr("value",value);
     $('#sortBtn p').html(text);
+    search(value,$('#filterBtn').attr("value"),$('.inputs input').val());
 })
 
 $("#filterBtn li").click(function(){
@@ -100,6 +107,17 @@ function search(sort="recents",filter="nom",input=""){
 
     }
 
+    if(sort === "recents")
+    {
+        acceptedMovies.sort((a,b)=>b.year - a.year);
+    }
+    else if(sort === "recents")
+    {
+        acceptedMovies.sort((a,b)=>b.year - a.year);
+    }
+
+
+
         for(let movie of acceptedMovies)
         {
             var movieDiv = document.createElement("div");
@@ -125,7 +143,6 @@ function search(sort="recents",filter="nom",input=""){
                 starsDiv.appendChild(starImg);
                 a++;
             }
-            console.log(a);
             movieDiv.appendChild(starsDiv);
 
             var heartImg = document.createElement("img");
@@ -145,4 +162,4 @@ function search(sort="recents",filter="nom",input=""){
             document.querySelector(".movies").appendChild(movieDiv);
         }
 }
-search()
+search();
