@@ -6,4 +6,51 @@ body > section{
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
+    margin-bottom: 60px !important;
+}
+
+h1,h3{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.movie{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.movie img:not(.favorite,.stars img){
+    width: 400px;
+}
+
+.stars img{
+    width: 60px;
+}
+
+.favorite{
+    width: 100px;
+    align-self: flex-start;
+}
+
+.movie h3{
+    width: 100%;
+}
+
+.movie p{
+    align-self: flex-start;
+    font-weight: 500;
+    font-size: 35px;
 }
