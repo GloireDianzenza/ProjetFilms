@@ -3,5 +3,7 @@ $('#filterBtn').click(function(){
 });
 
 $('#sortBtn li').click(function(){
-    console.log($(this).attr("value"));
+    var value = $(this).attr('value');
+    var text = $(this).html();
+    $('#filterBtn').attr("value",value);
 })
