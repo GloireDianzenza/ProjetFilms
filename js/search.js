@@ -5,5 +5,5 @@ $('#filterBtn').click(function(){
 $('#sortBtn li').click(function(){
     var value = $(this).attr('value');
     var text = $(this).html();
-    $('#filterBtn').attr("value",value);
+    $('#sortBtn').attr("value",value);
 })
