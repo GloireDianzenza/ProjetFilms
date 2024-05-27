@@ -8,3 +8,9 @@ $('#sortBtn li').click(function(){
     $('#sortBtn').attr("value",value);
     $('#sortBtn p').html(text);
 })
+
+$("#filterBtn li").click(function(){
+    var value = $(this).attr('value');
+    var text = $(this).html();
+    console.log(text);
+})
