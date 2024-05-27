@@ -13,3 +13,20 @@ h1{
     font-weight: bold;
     text-align: center;
 }
+
+#sortBtn{
+    background-color: red;
+    border-radius: 10px;
+    border: none;outline: none;
+    padding: 15px;
+    display: flex;
+    max-width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#sortBtn img{
+    width: 25px;
+}
