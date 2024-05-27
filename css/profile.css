@@ -6,6 +6,7 @@ body > section{
     flex-direction: column;
     justify-content: flex-start;
     gap: 50px;
+    margin-bottom: 60px !important;
 }
 
 h1{
@@ -17,4 +18,12 @@ h1{
 h2,h3,section a{
     font-weight: normal;
     font-size: 90px;
+}
+
+section a{
+    text-decoration: none;
+    color: red;
+}
+section a:hover{
+    text-decoration: underline;
 }
