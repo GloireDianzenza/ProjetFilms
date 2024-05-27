@@ -113,3 +113,7 @@ header{
 #filterBtn ul li:hover{
     text-decoration: underline;
 }
+
+#filterBtn,#sortBtn{
+    user-select: none;
+}
