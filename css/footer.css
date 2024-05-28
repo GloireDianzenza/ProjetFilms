@@ -27,4 +27,13 @@ footer .countries{
         flex-direction: column;
         gap: 10px;
     }
+
+    footer{
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    footer > div{
+        width: 100% !important;
+    }
 }

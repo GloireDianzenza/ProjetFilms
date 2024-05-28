@@ -52,6 +52,35 @@ form input{
     border: none;outline: none;
 }
 
+@media screen and (max-width:430px) {
+    h1,label{
+        font-weight: 500;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    input{
+        width: 100px !important;
+        font-size: 25px !important;
+        max-width: 100% !important;
+    }
+
+    .input-field input{
+        max-width: 90% !important;
+        margin: 0 !important;
+    }
+
+    footer{
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    footer > div{
+        width: 100% !important;
+    }
+}
+
+
 @media screen and (max-width:1024px) {
 
     body{
@@ -100,16 +129,13 @@ form input{
     }
 }
 
-
-@media screen and (max-width:430px) {
-    h1,label{
-        font-weight: 500;
-        font-size: 40px;
-        text-align: center;
+@media screen and (max-width:540px) {
+    h1{
+        font-size: 75px;
     }
-
-    input{
-        width: 100px !important;
-        font-size: 25px !important;
+}
+@media screen and (max-width:412px) {
+    h1{
+        font-size: 60px;
     }
 }
