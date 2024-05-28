@@ -61,7 +61,7 @@ form input{
 
     input{
         width: 100px !important;
-        font-size: 25px !important;
+        font-size: 18px !important;
         max-width: 100% !important;
     }
 
@@ -104,6 +104,7 @@ form input{
     .input-field input{
         min-width: 60% !important;
         margin: 0 !important;
+        font-size: 22px !important;
     }
 
     section > *:not(h1){
@@ -131,7 +132,7 @@ form input{
 
 @media screen and (max-width:540px) {
     h1{
-        font-size: 75px;
+        font-size: 60px;
     }
 }
 @media screen and (max-width:412px) {
