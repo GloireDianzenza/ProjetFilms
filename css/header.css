@@ -38,3 +38,22 @@ header .right{
     align-items: center;
     gap: 20px;
 }
+
+@media screen and (max-width:430px) {
+    header{
+        max-width: 100vw;
+        flex-direction: column;
+        height: fit-content;
+        min-height: fit-content !important;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    header > div{
+        width: 100% !important;
+    }
+
+    header .right{
+        justify-content: center;
+    }
+}

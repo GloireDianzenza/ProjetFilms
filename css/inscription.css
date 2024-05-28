@@ -53,6 +53,11 @@ form input{
 }
 
 @media screen and (max-width:1024px) {
+
+    body{
+        width: 100% !important;
+    }
+
     .input-field{
         flex-direction: column;
         align-items: center;
@@ -72,10 +77,6 @@ form input{
         margin: 0 !important;
     }
 
-    body{
-        width: 100vw !important;
-    }
-
     section > *:not(h1){
         padding: 0 40px;
     }
@@ -91,6 +92,7 @@ form input{
 
     section{
         justify-content: center !important;
+        width: 100% !important;
     }
 
     h1{
@@ -108,5 +110,6 @@ form input{
 
     input{
         width: 100px !important;
+        font-size: 25px !important;
     }
 }

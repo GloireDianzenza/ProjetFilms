@@ -109,3 +109,37 @@ h3{
     user-select: none;
     pointer-events: none;
 }
+
+@media screen and (max-width:430px) {
+    header{
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+    body > section{
+        margin-top: 150px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .movie > img:first-child{
+        width: 350px !important;
+    }
+
+    .movies{
+        margin: 0 !important;
+    }
+
+    .buttons{
+        padding: 0;
+        gap: 0;
+        justify-content: center !important;
+        gap: 30px;
+    }
+
+    .buttons button{
+        font-size: 25px !important;
+    }
+}

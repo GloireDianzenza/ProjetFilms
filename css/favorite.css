@@ -54,3 +54,22 @@ h1,h3{
     font-weight: 500;
     font-size: 35px;
 }
+
+@media screen and (max-width:430px) {
+    header{
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+    body > section{
+        margin-top: 150px;
+    }
+
+    .movie > img:first-child{
+        width: 350px !important;
+    }
+
+    .movie p{
+        padding: 10px !important;
+    }
+}

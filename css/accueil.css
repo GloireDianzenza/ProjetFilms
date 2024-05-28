@@ -95,6 +95,26 @@ button{
     max-width: fit-content !important;
 }
 
-@media screen and (max-width:1024px) {
-    
+@media screen and (max-width:430px) {
+    .title{
+        flex-direction: column;
+    }
+
+    body,section{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .movie{
+        max-width: 400px !important;
+    }
+
+    .movie > img:first-child{
+        width: 250px !important;
+    }
+
+    body > section{
+        margin-top: 150px !important;
+    }
 }

@@ -168,3 +168,35 @@ header{
         top: calc(100% + 3px);
     }
 }
+
+@media screen and (max-width:430px) {
+    header{
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+    #sortBtn{
+        margin: 0 !important;
+    }
+
+    .movie > img:first-child{
+        width: 350px !important;
+    }
+
+    body > section{
+        margin-top: 150px;
+    }
+
+    .inputs div{
+        flex-direction: column;
+        max-width: 250px !important;
+    }
+
+    #filterBtn{
+        max-width: 100% !important;
+    }
+
+    #filterBtn p{
+        font-size: 35px !important;
+    }
+}

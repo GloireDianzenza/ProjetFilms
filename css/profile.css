@@ -27,3 +27,29 @@ section a{
 section a:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width:430px) {
+    header{
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 75px;
+    }
+
+    section{
+        align-items: center;
+        width: 100% !important;
+    }
+
+    h2,h3,section a{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    body > section{
+        margin-top: 150px;
+    }
+}

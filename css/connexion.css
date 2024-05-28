@@ -66,3 +66,41 @@ form input{
         width: 100%;
     }
 }
+
+@media screen and (max-width:430px) {
+    h1{
+        font-size: 50px !important;
+        width: 100%;
+        text-align: center;
+    }
+
+    section{
+        width: 100% !important;
+    }
+
+    body{
+        width: 100% !important;
+    }
+
+    label{
+        font-size: 20px;
+        text-align: left;
+        margin-left: 30px !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .input-field{
+        align-items: flex-start;
+        padding: 0;
+        width: 100% !important;
+    }
+
+    .input-field input{
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+        min-width: 0 !important;
+    }
+    
+}
