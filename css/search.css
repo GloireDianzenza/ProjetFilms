@@ -194,9 +194,6 @@ header{
 
     #filterBtn{
         max-width: 100% !important;
-    }
-
-    #filterBtn p{
         font-size: 35px !important;
     }
 }
