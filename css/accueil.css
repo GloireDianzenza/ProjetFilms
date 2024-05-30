@@ -95,7 +95,7 @@ button{
     max-width: fit-content !important;
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:440px) {
     .title{
         flex-direction: column;
     }
@@ -116,5 +116,19 @@ button{
 
     body > section{
         margin-top: 150px !important;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .title{
+        flex-direction: column;
+    }
+
+    .title .right{
+        text-align: center;
+    }
+
+    h1{
+        text-align: center;
     }
 }
