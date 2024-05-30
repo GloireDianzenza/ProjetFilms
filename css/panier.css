@@ -143,3 +143,9 @@ h3{
         font-size: 25px !important;
     }
 }
+
+@media screen and (max-width:440px){
+    button{
+        font-size: 25px !important;
+    }
+}

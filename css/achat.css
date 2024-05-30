@@ -139,3 +139,36 @@ label,#prix{
         gap: 50px;
     }
 }
+
+@media screen and (max-width:350px) {
+   .part1 img{
+        width: 250px !important;
+   }
+}
+
+@media screen and (max-width:550px) {
+    .part1 img{
+         width: 250px !important;
+    }
+
+    .input-field{
+        flex-direction: column;
+    }
+
+    .right h2{
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .right p{
+        font-size: 20px;
+    }
+
+    .right{
+        width: auto !important;
+    }
+
+    .left{
+        width: 300px !important;
+    }
+}

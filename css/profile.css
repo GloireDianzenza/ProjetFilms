@@ -53,3 +53,27 @@ section a:hover{
         margin-top: 150px;
     }
 }
+
+@media screen and (max-width:550px) {
+    h2{
+        font-size: 65px !important;
+    }
+}
+@media screen and (max-width:420px) {
+    h2{
+        font-size: 30px !important;
+    }
+}
+@media screen and (max-width:440px) {
+    h2{
+        font-size: 30px !important;
+    }
+
+    h1{
+        font-size: 75px !important;
+    }
+
+    section a{
+        font-size: 65px !important;
+    }
+}

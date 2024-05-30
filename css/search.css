@@ -200,3 +200,14 @@ header{
         font-size: 35px !important;
     }
 }
+
+@media screen and (max-width:350px){
+    .movie > img:first-child{
+        width: 280px !important;
+    }
+}
+@media screen and (max-width:370px){
+    .movie > img:first-child{
+        width: 280px !important;
+    }
+}

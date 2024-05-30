@@ -108,3 +108,28 @@ button{
         margin: 0 auto !important;
     }
 }
+
+@media screen and (max-width:550px){
+    .input-field{
+        flex-direction: column;
+    }
+
+    label{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:770px){
+    .input-field{
+        flex-direction: column;
+    }
+
+    label{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:440px){
+    h1{
+        font-size: 55px;
+    }
+}

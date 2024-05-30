@@ -27,7 +27,7 @@ $("#filterBtn li").click(function(){
 
 const movieList = [
     {
-        image:"../img/Titanic (James Cameron, 1997)_0000.jpg",
+        image:"../img/Titanic.jpg",
         title:"Titanic",
         year:1997,
         director:"James Cameron",
