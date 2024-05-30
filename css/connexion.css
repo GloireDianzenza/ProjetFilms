@@ -69,7 +69,7 @@ form input{
 
 @media screen and (max-width:430px) {
     h1{
-        font-size: 50px !important;
+        font-size: 35px !important;
         width: 100%;
         text-align: center;
     }
@@ -103,4 +103,52 @@ form input{
         min-width: 0 !important;
     }
     
+}
+
+@media screen and (max-width:860px) {
+    body{
+        width: 100vw !important;
+    }
+
+    .input-field{
+        gap: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    h1{
+        font-size: 40px;
+        text-align: center;
+        width: 100% !important;
+    }
+
+    .input-field input{
+        min-width: 400px !important;
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width:350px) {
+    header{
+        width: 100%;
+        max-width: 100% !important;
+    }
+    
+    .input-field input{
+        min-width: 65% !important;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:770px) {
+    header{
+        width: 100%;
+        max-width: 100% !important;
+    }
+    
+    .input-field input{
+        min-width: 60% !important;
+        align-self: center;
+    }
 }
