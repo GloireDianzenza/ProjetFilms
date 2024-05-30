@@ -8,7 +8,7 @@ setInterval(()=>{
 },100);
 
 for(var quan of document.querySelectorAll(".quantity")){
-    quan.querySelector("#plus").addEventListener("click",(e)=>{
+    quan.querySelector(".plus").addEventListener("click",(e)=>{
         var input = e.target.parentNode.querySelector("input");
         var value = input.value;
         if(!isInteger(value))
@@ -22,7 +22,7 @@ for(var quan of document.querySelectorAll(".quantity")){
             changerPrix();
         }
     })
-    quan.querySelector("#minus").addEventListener("click",(e)=>{
+    quan.querySelector(".minus").addEventListener("click",(e)=>{
         var input = e.target.parentNode.querySelector("input");
         var value = input.value;
         if(!isInteger(value))
