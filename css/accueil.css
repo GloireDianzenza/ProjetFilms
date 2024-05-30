@@ -95,6 +95,11 @@ button{
     max-width: fit-content !important;
 }
 
+button a{
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (max-width:440px) {
     .title{
         flex-direction: column;
