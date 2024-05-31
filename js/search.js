@@ -20,7 +20,7 @@ $("#filterBtn li").click(function(){
     var value = $(this).attr('value');
     var text = $(this).html();
     $('#filterBtn').attr("value",value);
-    $('#filterBtn > p').html(text);
+    $('#filterBtn').html(text+'<ul class="filter-list"><li value="nom">Nom</li><li value="annee">Année</li><li value="note">Note</li><li value="genre">Genre</li><li value="director">Réalisateur</li></ul>');
     search($('#sortBtn').attr("value"),value,$('.inputs input').val());
 })
 
