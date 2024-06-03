@@ -140,3 +140,8 @@ form input{
         font-size: 60px;
     }
 }
+@media screen and (max-width:330px) {
+    h1{
+        font-size: 50px;
+    }
+}
