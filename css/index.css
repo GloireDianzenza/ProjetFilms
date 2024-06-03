@@ -44,7 +44,7 @@ h1{
 
 @media screen and (max-width:430px) {
     h1{
-        font-size: 60px;
+        font-size: 60px !important;
     }
 
     .buttons{
