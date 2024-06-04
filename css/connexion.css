@@ -43,7 +43,7 @@ form input{
     font-weight: normal;
     font-size: 40px;
     padding-left: 10px;
-    min-width: 800px;
+    min-width: 500px;
     border-radius: 10px;
     border: none;outline: none;
 }
@@ -152,3 +152,14 @@ form input{
         align-self: center;
     }
 }
+@media screen and (max-width:800px) {
+    h1{
+        font-size: 75px;
+    }
+}
+@media screen and (max-width:500px) {
+    h1{
+        font-size: 30px;
+    }
+}
+
