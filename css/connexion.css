@@ -23,12 +23,11 @@ label{
 }
 
 .input-field{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 100px;
-    padding-left: 60px;
 }
 
 form{
@@ -106,9 +105,6 @@ form input{
 }
 
 @media screen and (max-width:860px) {
-    body{
-        width: 100vw !important;
-    }
 
     .input-field{
         gap: 0;
