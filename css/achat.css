@@ -172,3 +172,17 @@ label,#prix{
         width: 300px !important;
     }
 }
+@media screen and (max-width:700px) {
+    h1{
+        font-size: 70px;
+    }
+
+    section .left img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:670px) {
+    .input-field{
+        flex-direction: column;
+    }
+}
