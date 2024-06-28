@@ -149,3 +149,9 @@ h3{
         font-size: 25px !important;
     }
 }
+
+@media screen and (max-width:500px){
+    .movie p{
+        text-align:center;
+    }
+}
