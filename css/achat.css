@@ -186,3 +186,8 @@ label,#prix{
         flex-direction: column;
     }
 }
+@media screen and (max-width:800px) {
+    .part1 h2{
+        margin-left: 20px !important;
+    }
+}
