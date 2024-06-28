@@ -190,4 +190,8 @@ label,#prix{
     .part1 h2{
         margin-left: 20px !important;
     }
+    .part1 .left,.part1 .left img{
+        margin-right: 20px !important;
+    }
 }
+
