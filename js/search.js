@@ -71,7 +71,7 @@ const movieList = [
         genre:["Adventure","Action","Comedy"]
     },
     {
-        image:"../img/leon.jpg",
+        image:"../img/Leon.jpg",
         title:"Léon : The Professional",
         year:1994,
         director:"Luc Besson",
